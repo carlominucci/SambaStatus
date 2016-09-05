@@ -10,7 +10,7 @@ $admin_users = explode(",", $admin);
 echo "<b>" . $T('ActiveConnections' ) . "</b>\n";
 echo "<div class=\"DataTable \" >";
 echo "<table><thead>\n";
-echo "<tr><th>" . $T('Username') . "</th><th>" . $T('Hostname') . "</th><th>" . $T('IPAddress') . "</th></tr><thead><tbody>\n";
+echo "<tr><th style=\"text-align: left;\">" . $T('Username') . "</th><th style=\"text-align: left;\">" . $T('Hostname') . "</th><th style=\"text-align: left;\">" . $T('IPAddress') . "</th></tr><thead><tbody>\n";
 
 $command = "smbstatus -b | sed -e '1,4d' | awk '{print $2 \"\t\" $4 \"\t\" $5}' | sort -h";
 $admin_shell = shell_exec($command);
