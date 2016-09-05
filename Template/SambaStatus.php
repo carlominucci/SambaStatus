@@ -10,7 +10,7 @@ $admin_users = explode(",", $admin);
 echo "<b>" . $T('ActiveConnections' ) . "</b>\n";
 echo "<div class=\"DataTable \" >";
 echo "<table><thead>\n";
-echo "<tr><th style=\"text-align: left;\">" . $T('Username') . "</th><th style=\"text-align: left;\">" . $T('Hostname') . "</th><th style=\"text-align: left;\">" . $T('IPAddress') . "</th></tr><thead><tbody>\n";
+echo "<tr><th>" . $T('Username') . "</th><th>" . $T('Hostname') . "</th><th>" . $T('IPAddress') . "</th></tr><thead><tbody>\n";
 
 $command = "smbstatus -b | sed -e '1,4d' | awk '{print $2 \"\t\" $4 \"\t\" $5}' | sort -h";
 $admin_shell = shell_exec($command);
@@ -37,9 +37,18 @@ echo "</div>\n";
 echo "<br />\n";
 
 echo "<b>" . $T('LockedFiles') . "</b><br />";
-echo "<pre>\n";
+echo "<div class=\"DataTable \" >";
+echo "<table><thead>";
+echo "<tr><th>" . $T('Share') . "</th><th>" . $T('FileName') . "</th><th>" . $T('Date') . "</th><thead><tbody>\n";
 $command= "smbstatus -L | sed -e '1,3d' | awk -F'/var/lib/nethserver' '{print $2}'";
-$out = shell_exec($command);
-echo $out;
-echo "</pre>\n";
+$locked = shell_exec($command);
+$locked_files = explode("\n", chop($locked));
+
+foreach($locked_files as $file){
+	$file_tmp = explode("   ", $file);
+	echo "<tr><td>" . $file_tmp[0] . "</td><td>" . $file_tmp[1] . "</td><td>" . $file_tmp[2] . "</td><tr>";
+}
+echo "<tbody></table>\n";
+echo "</div>\n";
+
 
