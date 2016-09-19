@@ -9,3 +9,4 @@ $L['IPAddress'] = "Indirizzo IP";
 $L['Share'] = "Condivisione";
 $L['FileName'] = "Nome File";
 $L['Date'] = "Data";
+$L['Refresh'] = "Aggiorna";

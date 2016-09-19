@@ -9,3 +9,4 @@ $L['IPAddress'] = "IP Address";
 $L['Share'] = "Share";
 $L['FileName'] = "File Name";
 $L['Date'] = "Date";
+$L['Refresh'] = "Refresh";
