@@ -7,7 +7,6 @@ $command = "getent group domadmins | cut -d \":\" -f4";
 $admin = shell_exec($command);
 $admin_users = explode(",", $admin);
 
-echo "<div class='Buttonlist'><a href='" . $view->getModuleUrl() . "' class='Button link Tf401ba76'>" . $T('Refresh') . "</a></div>\n";
 
 echo "<b>" . $T('ActiveConnections' ) . "</b>\n";
 echo "<div class=\"DataTable \" >";
