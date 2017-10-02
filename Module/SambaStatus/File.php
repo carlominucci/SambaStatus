@@ -1,5 +1,5 @@
 <?php
-namespace NethServer\Module;
+namespace NethServer\Module\SambaStatus;
 
 /*
  * Copyright (C) 2011 Nethesis S.r.l.
@@ -20,20 +20,29 @@ namespace NethServer\Module;
  * along with NethServer.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+use Nethgui\System\PlatformInterface as Validate;
+
 /**
- * Implementation of configuration backup.
+ * Restore a local configuration backup
+ *
+ * @author Giacomo Sanchietti <giacomo.sanchietti@nethesis.it>
  */
-class SambaStatus extends \Nethgui\Controller\TabsController
+class File extends \Nethgui\Controller\AbstractController
 {
-    protected function initializeAttributes(\Nethgui\Module\ModuleAttributesInterface $base)
-    {
-        return \Nethgui\Module\SimpleModuleAttributesProvider::extendModuleAttributes($base, 'Status');
-    }
+    private $file;
+
+    /**
+     *
+     * @var \Nethgui\Module\Notification
+     */
 
     public function initialize()
     {
         parent::initialize();
-        $this->loadChildrenDirectory();
+        $this->declareParameter('SystemName', $this->createValidator()->memberOf(array('0','1')));
     }
+
+
+
 
 }
