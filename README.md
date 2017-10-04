@@ -7,8 +7,11 @@ With *SambaStatus* you can see:
 * how many files are open.
 * how many machines are joined domain.
 
+## Repository:
+[https://minucci.net/nethserver/](https://minucci.net/nethserver/)
+
 ## Note
-Work only in 6.x version.
+NethServer 7.x ready!
 
 ### Contact
 
@@ -16,4 +19,4 @@ Carlo Minucci
 
 carlo.minucci@gmail.com
 
-[minucci.net](http://minucci.net)
+[minucci.net](https://minucci.net)
