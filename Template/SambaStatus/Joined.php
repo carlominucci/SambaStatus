@@ -1,7 +1,7 @@
 <?php
 echo $view->header()->setAttribute('template', $T('Joined_Title'));
 
-$command = "cat /var/lib/nethserver/db/accounts | grep machine | awk -F \"=\" '{print $1 \"|\"}' | tr -d \"$\" | sort";
+$command = "ls -l /var/lib/nethserver/home/ | grep \"domain computers\" | awk '{print $10}' | sort | tr \"\n\" \"|\"";
 $pc = shell_exec($command);
 $arrpc = explode("|", $pc);
 //echo $pc;
