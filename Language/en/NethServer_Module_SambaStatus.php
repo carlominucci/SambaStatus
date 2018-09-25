@@ -3,6 +3,7 @@ $L['SambaStatus_Title'] = "SambaStatus";
 $L['Connection_Title'] = "Active Connections";
 $L['File_Title'] = "Locked Files";
 $L['Joined_Title'] = "Machines Joined Domain";
+$L['Share_Title'] = "Share";
 $L['ActiveConnections'] = "Active Connections";
 $L['Username'] = "Username";
 $L['Hostname'] = "Host name";
