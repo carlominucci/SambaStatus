@@ -11,7 +11,11 @@ With *SambaStatus* you can see:
 [https://minucci.net/nethserver/](https://minucci.net/nethserver/)
 
 ## Note
-NethServer 7.x ready!
+For NethServer 7.x use 7.x version of SambaStatus.  
+For NethServer 6.x you must use old version.
+
+## Support
+[https://www.amazon.it/hz/wishlist/ls/1QLH9JFTM9BGM/](Amazon Wishlist) :-)
 
 ### Contact
 
