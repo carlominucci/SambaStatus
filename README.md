@@ -15,7 +15,7 @@ For NethServer 7.x use 7.x version of SambaStatus.
 For NethServer 6.x you must use old version.
 
 ## Support
-[https://www.amazon.it/hz/wishlist/ls/1QLH9JFTM9BGM/](Amazon Wishlist) :-)
+[Amazon Wishlist](https://www.amazon.it/hz/wishlist/ls/1QLH9JFTM9BGM/]) :-)
 
 ### Contact
 
