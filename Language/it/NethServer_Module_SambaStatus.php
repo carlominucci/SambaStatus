@@ -9,6 +9,6 @@ $L['Username'] = "Nome Utente";
 $L['Hostname'] = "Nome Host";
 $L['LockedFiles'] = "File Aperti";
 $L['IPAddress'] = "Indirizzo IP";
-$L['Share'] = "Condivisioni";
+$L['Share'] = "Condivisioni attive";
 $L['FileName'] = "Nome File";
 $L['Date'] = "Data";
