@@ -11,7 +11,7 @@ echo "<table><thead>";
 echo "<tr><th>" . $T('Share') . "</th><th>" . $T('Hostname') . "</th><th>" . $T('Date') . "</th><thead><tbody>\n";
 //$command= $sudo . "smbstatus -S | grep CEST | awk '{print $1 \"\t\" $3 \"\t\" $4\"/\"$5\"/\"$6 \" \" $7}' | sort";
 //thanks to @mrmarkuz
-$command= $sudo . "smbstatus -S | grep `date +%Z` | awk '{print $1 \"\t\" $3 \"\t\" $4\"/\"$5\"/\"$6 \" \" $7}' | sort";
+$command= $sudo . "smbstatus -S | grep `date +%Z` | awk '{print $1 \"\t\" $3 \"\t\" $4\" \"$5\" \"$6 \" - \" $7}' | sort";
 $locked = shell_exec($command);
 $locked_files = explode("\n", chop($locked));
 foreach($locked_files as $file){
