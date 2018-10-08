@@ -23,4 +23,4 @@ Carlo Minucci
 
 carlo.minucci@gmail.com
 
-[minucci.net](https://minucci.net)
+[homepage](https://carlominucci.github.io/)
