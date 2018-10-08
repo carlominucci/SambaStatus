@@ -1,5 +1,5 @@
 #
 # 30_nethserver_sambastatus
 #
-%srvmgr ALL=NOPASSWD: /usr/bin/smbstatus 
+%srvmgr ALL=NOPASSWD: /usr/bin/smbstatus , /usr/bin/net
 
