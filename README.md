@@ -6,6 +6,7 @@ With *SambaStatus* you can see:
 * how many user are connected to your server.
 * how many files are open.
 * how many machines are joined domain.
+
 Now with german translation too.
 
 ## Repository:
