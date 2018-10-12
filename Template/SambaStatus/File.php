@@ -17,10 +17,10 @@ foreach($listusers_array as $users){
 	$users_tmp = explode("\t", $users);
 	echo "<tr><td>" . $users_tmp[0] . "</td><td>" . $users_tmp[1] . "</td><td>\n";
 
-	// thanks to @MrE	
-	$command = $sudo . "smbstatus -L | grep " . $users_tmp[2] . " | awk '{print $9 \" \" $10 \" \" $11 \" \" $12 \" \" $13 \" - \" $7 \"/\" $8}'";
+	// thanks to @MrE for idea
+	$command = $sudo . "smbstatus -L | grep " . $users_tmp[2] . " | awk -F \"/var/lib/nethserver/\" {'print $2'} | sed 's/   /|/g' | awk -F \"|\" {'print $3 \" - \" $1 \"/\" $2'}";	
 	$locked = shell_exec($command);
-	echo nl2br(str_replace("/var/lib/nethserver", "", $locked));
+	echo nl2br($locked);
 
 	echo "</td></tr>";
 }
