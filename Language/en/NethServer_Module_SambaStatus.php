@@ -12,3 +12,4 @@ $L['IPAddress'] = "IP Address";
 $L['Share'] = "Active Share";
 $L['FileName'] = "File Name";
 $L['Date'] = "Date";
+$L['LastLogin_Title'] = "Last Login";

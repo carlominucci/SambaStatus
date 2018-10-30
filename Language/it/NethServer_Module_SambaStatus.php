@@ -12,3 +12,5 @@ $L['IPAddress'] = "Indirizzo IP";
 $L['Share'] = "Condivisioni attive";
 $L['FileName'] = "Nome File";
 $L['Date'] = "Data";
+$L['LastLogin_Title'] = "Ultimo Accesso";
+
