@@ -13,4 +13,6 @@ $L['Share'] = "Condivisioni attive";
 $L['FileName'] = "Nome File";
 $L['Date'] = "Data";
 $L['LastLogin_Title'] = "Ultimo Accesso";
-
+$L['DisplayName'] = "Nome Completo";
+$L['TotalUser'] = "Utenti in totale";
+$L['NeverLogged'] = "Nessun Accesso";

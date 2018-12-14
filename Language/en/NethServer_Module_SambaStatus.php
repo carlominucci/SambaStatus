@@ -13,3 +13,6 @@ $L['Share'] = "Active Share";
 $L['FileName'] = "File Name";
 $L['Date'] = "Date";
 $L['LastLogin_Title'] = "Last Login";
+$L['DisplayName'] = "Name Complete";
+$L['TotalUser'] = "Total User";
+$L['NeverLogged'] = "Never Logged In";
