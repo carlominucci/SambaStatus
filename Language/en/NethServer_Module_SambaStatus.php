@@ -1,5 +1,5 @@
 <?php
-$L['SambaStatus_Title'] = "SambaStatus";
+$L['SambaStatus_Title'] = "Samba status";
 $L['Connection_Title'] = "Active Connections";
 $L['File_Title'] = "Locked Files";
 $L['Joined_Title'] = "Machines Joined Domain";
